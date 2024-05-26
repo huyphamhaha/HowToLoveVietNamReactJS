@@ -55,42 +55,42 @@ function Home(){
             
                 <div className="tours-container tours-container-special">
                     <div className="tour-card" data-aos="fade-up">
-                        <img src="./Img/hanoi.jpeg" className="tour-img" alt="tour-image"/>
+                        <img src="./Img/hanoi.jpeg" className="tour-img" alt=""/>
                         <div className="tour-body">
                             <h3 className="tour-name">Hà Nội</h3>
                         </div>
                     </div>
             
                     <div className="tour-card" data-aos="fade-up">
-                        <img src="./Img/tphcm.jpeg" className="tour-img" alt="tour-image"/>
+                        <img src="./Img/tphcm.jpeg" className="tour-img" alt=""/>
                         <div className="tour-body">
                             <h3 className="tour-name">TP. Hồ Chí Minh</h3> 
                         </div>
                     </div>
             
                     <div className="tour-card" data-aos="fade-up">
-                        <img src="./Img/hue.jpeg" className="tour-img" alt="tour-image"/>
+                        <img src="./Img/hue.jpeg" className="tour-img" alt=""/>
                         <div className="tour-body">
                             <h3 className="tour-name">TP. Huế</h3>
                         </div>
                     </div>
             
                     <div className="tour-card" data-aos="fade-up">
-                        <img src="./Img/dalat.jpeg" className="tour-img" alt="tour-image"/>
+                        <img src="./Img/dalat.jpeg" className="tour-img" alt=""/>
                         <div className="tour-body">
                             <h3 className="tour-name">TP. Đà lạt</h3>
                         </div>
                     </div>
             
                     <div className="tour-card" data-aos="fade-up">
-                        <img src="./Img/haiphong.jpeg" className="tour-img" alt="tour-image"/>
+                        <img src="./Img/haiphong.jpeg" className="tour-img" alt=""/>
                         <div className="tour-body">
                             <h3 className="tour-name">TP. Hải Phòng</h3>
                         </div>
                     </div>
             
                     <div className="tour-card" data-aos="fade-up">
-                        <img src="./Img/danang.jpeg" className="tour-img" alt="tour-image"/>
+                        <img src="./Img/danang.jpeg" className="tour-img" alt=""/>
                         <div className="tour-body">
                             <h3 className="tour-name">TP. Đà Nẵng</h3>
                         </div>
@@ -105,17 +105,17 @@ function Home(){
             
                 <div className="serives-grid">
                     <div className="service-card" data-aos="fade-up">
-                        <img src="./Img/421104201_762321142617009_1189638150950876417_n.png" className="serviceCardImg"></img>
+                        <img src="./Img/421104201_762321142617009_1189638150950876417_n.png" className="serviceCardImg" alt=""></img>
                         <p className="icon">😍</p>
                         <p className="service-text">Có thể truy cập mọi lúc mỗi nơi, luôn sẵn sàng cung cấp kiến thức cho người dùng kể cả khi không có kết nối mạng !</p>
                     </div>
                     <div className="service-card" data-aos="fade-up">
-                        <img src="./Img/421104201_762321142617009_1189638150950876417_n.png" className="serviceCardImg"></img>
+                        <img src="./Img/421104201_762321142617009_1189638150950876417_n.png" className="serviceCardImg" alt=""></img>
                         <p className="icon">🤖</p>
                         <p className="service-text">Những tính năng mới như flashcards, bài giảng E-learning cùng chatBotAI giúp hỗ trợ ghi nhớ kiến thức nhanh chóng</p>
                     </div>
                     <div className="service-card" data-aos="fade-up">
-                        <img src="./Img/421104201_762321142617009_1189638150950876417_n.png" className="serviceCardImg"></img>
+                        <img src="./Img/421104201_762321142617009_1189638150950876417_n.png" className="serviceCardImg" alt=""></img>
                         <p className="icon">🐉</p>
                         <p className="service-text">Với hơn 100 thẻ flashcards cùng 300 câu hỏi về Địa Lý + Lịch Sử, có cái nhìn khái quát về văn hóa, lịch sử Việt Nam</p>
                     </div>
