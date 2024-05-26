@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HowToLoveVietNamReactJS/static/css/main.a1d2669e.css",
+    "main.js": "/HowToLoveVietNamReactJS/static/js/main.f80985c6.js",
+    "static/js/453.20fa8159.chunk.js": "/HowToLoveVietNamReactJS/static/js/453.20fa8159.chunk.js",
+    "static/media/NVN Brushwell Regular.ttf": "/HowToLoveVietNamReactJS/static/media/NVN Brushwell Regular.1b3f30075af5d311b1ae.ttf",
+    "index.html": "/HowToLoveVietNamReactJS/index.html",
+    "main.a1d2669e.css.map": "/HowToLoveVietNamReactJS/static/css/main.a1d2669e.css.map",
+    "main.f80985c6.js.map": "/HowToLoveVietNamReactJS/static/js/main.f80985c6.js.map",
+    "453.20fa8159.chunk.js.map": "/HowToLoveVietNamReactJS/static/js/453.20fa8159.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1d2669e.css",
+    "static/js/main.f80985c6.js"
+  ]
+}
