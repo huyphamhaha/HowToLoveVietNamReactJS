@@ -1,0 +1,567 @@
+@font-face {
+    font-family: MyCustomFont;
+    src: url('./NVN\ Brushwell\ Regular.ttf') format('truetype');
+}
+
+.pages {
+	background-color: #fff;
+}
+
+
+
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+    width: 7px; /* Chiều rộng của thanh cuộn */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #494b52; /* Màu nền của "nút" thanh cuộn */
+    border-radius: 6px; /* Độ cong góc của "nút" thanh cuộn */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #0a0d13; /* Màu nền của "đường dẫn" thanh cuộn */
+  }
+
+
+
+
+.strong {
+	font-weight: 700;
+}
+
+colorYellow {
+    color: #cc9e13 !important;
+}
+
+
+.colorYellow {
+    color: #cc9e13 !important;
+}
+
+redColor {
+    color: #b43620 !important;
+}
+
+.redColor {
+    color: #b43620 !important;
+
+}
+
+
+.ops-container {
+	
+	position:relative;
+	display:block;
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+	transform: translate3d(0,0,0);
+}
+
+.ops-page {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.ops-navigation {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	right: 12px;
+	top: 50%;
+	z-index: 2;
+	list-style: none;
+	float: right;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+
+.ops-navigation li {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 0;
+}
+
+.ops-navigation a {
+	display: block;
+	width: 10px;
+	height: 10px;
+}
+
+.ops-navigation a:before {
+	display: block;
+	content: ' ';
+	width: 10px;
+	height: 10px;
+	background: #cc9e13 ;
+	border-radius: 100%;
+}
+
+.ops-navigation a.active {
+	width: 12px;
+	height: 12px;
+}
+.ops-navigation a.active:before {
+	width: 12px;
+	height: 12px;
+	background: #b43620 ;
+	border: 1px solid #fff;
+	left: -2px;
+	position: relative;
+}
+
+.mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshowSection {
+	object-fit: cover; 
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow: hidden;
+}
+
+.slideshowContent{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.mainTitle {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-family: MyCustomFont;
+	font-size: 9rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.firstSection {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+}
+
+.popularitySection {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	justify-content: center;
+}
+
+.popularitySectionSpecial {
+	height: auto !important;
+}
+
+.popularitySectionContent {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.popularitySectionContain {
+	height: 100%;
+}
+
+.popularitySectionText {
+	width: auto;
+
+}
+
+.popularitySectionImg {
+	display: flex !important;
+	justify-content: center !important;
+	height: 100%;
+	padding: 20px;
+	width: auto;
+}
+
+.mapProvince {
+	border-radius: 15px;
+	border: 3px solid #cc9e13;
+	width: 100%;
+	height: auto;
+}
+
+.mainPopularitySectionText {
+	text-align: center;
+	margin-top: 20px;
+	color: #cc9e13;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.section-title-province {    
+	max-width: 900px;
+	text-align: justify;
+    display: block;
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 1.1rem;
+    color: #3d3d3f;
+    font-weight: 400;
+}
+
+.thumbImg {
+	margin-top: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+    object-fit: cover;
+	border-radius: 15px;
+	border: 5px solid #b43620;
+}
+
+.thumbImgBig {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;
+    object-fit: cover;
+	border-radius: 15px;
+	border: 5px solid #b43620;
+}
+
+.thumb {
+	
+	display: flex;
+	justify-content: center;
+}
+
+
+.strongTitle {
+	
+    background: -webkit-linear-gradient(45deg, #f3eb1a -33%, #db2726 69%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+    background-color: rgb(24, 26, 27);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+	font-size: 5rem;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 20px;
+	font-family: MyCustomFont;
+}
+
+/*Responsive*/
+/* >= Tablet */
+@media (min-width: 740px) {
+
+	.strongTitle {
+		margin-bottom: 0;
+		margin-top: 20px;
+		font-size: 4rem;
+	}
+
+	
+
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+}	
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+	.mainTitle {
+		font-size: 7.5rem;
+	} 
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
+
+@media (max-width: 739px) {
+	.mainPopularitySectionText{
+		margin-top: 10px;
+	}
+
+	.section-title-province {
+		margin-top: 10px;
+	}
+
+	.mainTitle {
+		font-size: 3rem;
+	}
+
+	.strongTitle {
+		margin-bottom: 0;
+		margin-top: 20px;
+		font-size: 2rem;
+	}
+	
+
+
+}
+
+
+
+
+/*GallerySection*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.gallery-item {
+    flex-basis: 32.7%;
+    margin-bottom: 6px;
+	height: 300px;
+    opacity: .85;
+    cursor: pointer;
+}
+.gallery-item:hover {
+	opacity: 1;
+	transition: ease-in-out 0.3s ;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-content {
+    font-size: .8em;
+}
+
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;              
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+
+@keyframes modalFadeIn {
+	from {
+		transform: translateY(-140px);
+		opacity: 0;
+
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.lightbox-content {
+	
+	animation: modalFadeIn ease 0.5s;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+.lightbox-content img {
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 7px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: .8;
+	transition: ease-in-out 0.3s ;
+}
+
+
+@media (max-width: 767px) {
+    .gallery-container {
+        width: 100%;
+    }
+    .gallery-item {
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content {
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+    .lightbox-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+
+.flashcard{
+	border-radius: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.center{
+	text-align: center;
+	margin: 0;
+	font-weight: 700;
+	font-size: 22px;
+}
+h2{
+	color: #db2726;
+	width: 100%;
+}
+.nft {
+	display: block;
+	user-select: none;
+	max-width: 300px;
+	margin: 20px auto;
+	border: 1px solid #ffffff22;
+	background-color: #282c34;
+	background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+	box-shadow: 0 7px 20px 5px #00000088;
+	border-radius: 0.7rem;
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	overflow: hidden;
+	transition: 0.5s all;
+  }
+  .nft hr {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #88888855;
+	margin-top: 0;
+  }
+  .nft ins {
+	text-decoration: none;
+  }
+  .nft .main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1rem;
+  }
+  .nft .main .tokenImage {
+	border-radius: 0.5rem;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	display: block; 
+    margin: 0 auto;
+  }
+  .nft .main .descriptionFlashcard {
+	margin: 0.5rem 0;
+	color: #a89ec9;
+	text-align: justify;
+
+  }
+  .nft .main .tokenInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  .nft .main .tokenInfo .price {
+	display: flex;
+	align-items: center;
+	color: #ee83e5;
+	font-weight: 700;
+  }
+  .nft .main .tokenInfo .price ins {
+	margin-left: -0.3rem;
+	margin-right: 0.5rem;
+  }
+  .nft .main .tokenInfo .duration {
+	display: flex;
+	align-items: center;
+	color: #a89ec9;
+	margin-right: 0.2rem;
+  }
+  .nft .main .tokenInfo .duration ins {
+	margin: 0.5rem;
+	margin-bottom: 0.4rem;
+  }
+  .nft .main .creator {
+	display: flex;
+	align-items: center;
+	margin-top: 0.2rem;
+	margin-bottom: -0.3rem;
+  }
+  .nft .main .creator ins {
+	color: #a89ec9;
+	text-decoration: none;
+  }
+  .nft .main .creator .wrapper {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ffffff22;
+	padding: 0.3rem;
+	margin: 0;
+	margin-right: 0.5rem;
+	border-radius: 100%;
+	box-shadow: inset 0 0 0 4px #000000aa;
+  }
+  .nft .main .creator .wrapper img {
+	border-radius: 100%;
+	border: 1px solid #ffffff22;
+	width: 2rem;
+	height: 2rem;
+	object-fit: cover;
+	margin: 0;
+  }
+  .nft ::before {
+	position: fixed;
+	content: "";
+	box-shadow: 0 0 100px 40px #ffffff08;
+	top: -10%;
+	left: -100%;
+	transform: rotate(-45deg);
+	height: 60rem;
+	transition: 0.7s all;
+  }
+  .nft:hover {
+	border: 1px solid #ffffff44;
+	box-shadow: 0 7px 50px 10px #000000aa;
+	transform: scale(1.015);
+	filter: brightness(1.3);
+  }
+  .nft:hover ::before {
+	filter: brightness(0.5);
+	top: -100%;
+	left: 200%;
+  }
+  

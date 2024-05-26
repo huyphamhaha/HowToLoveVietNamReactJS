@@ -1,0 +1,85 @@
+:root{
+    --sphere-gradient-one: radial-gradient(50% 50% at 20% 25%, #686868 0%, #403F3F 35%, #222222 70%, #000000 100%);
+    --sphere-gradient-two: radial-gradient(51.04% 51.04% at 18.94% 26.18%, #686868 0%, #403F3F 36.98%, #222222 70.83%, #000000 100%);
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+    width: 7px; /* Chiều rộng của thanh cuộn */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #494b52; /* Màu nền của "nút" thanh cuộn */
+    border-radius: 6px; /* Độ cong góc của "nút" thanh cuộn */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0a0d13; /* Màu nền của "đường dẫn" thanh cuộn */
+}
+
+.grid-container {
+    background-image: url("https://images.pexels.com/photos/14036340/pexels-photo-14036340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px;
+}
+.mainMap { 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.mainMap svg {
+    cursor: pointer;
+}
+
+
+.colorChange:hover path {
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 0 1rem #888686;
+    filter: brightness(1) saturate(500%);
+}
+.colorChange {
+    transition: all 0.3s ease;
+}
+
+.cardInfo{
+    color: white;
+    display: table;
+    width: 60%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4%; 
+    line-height: 1.5;
+    font-size: 17px;
+}
+#card{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1113px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 10px;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .mainMap svg { 
+        padding-top: 10%;
+        height: 70vh;
+    }
+    body {
+        overflow: auto;
+    }
+}
